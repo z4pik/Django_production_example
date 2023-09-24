@@ -1,4 +1,4 @@
-version: '3.9'
+version: '3.3'
 
 services:
   django:
@@ -31,11 +31,9 @@ services:
     ports:
       - "80:80"
     volumes:
-      - static data:/var/www/html/static
+      - static_data:/var/www/html/static
       - ./nginx-conf.d:/etc/nginx/conf.d
 
-volumes :
-  pg data:
-  static data:
-
-
+volumes:
+  pg_data:
+  static_data:
