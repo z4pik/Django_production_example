@@ -1,4 +1,4 @@
-Django
+django
 django-environ
 gunicorn
-psycopg2
+psycopg2-binary
